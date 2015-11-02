@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Base.Theme.AppCompat">-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:background">@color/gray_light_in_action_bar</item>
+        <item name="toolbarStyle">@style/AppThemeToolbar</item>
+        <!--<item name="android:background">@color/gray_light_background_fragment</item>-->
+    </style>
+    <!-- Avoid bug action bar deviate to right at Android Lollipop -->
+    <style name="AppThemeToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <!-- MY STYLE -->
+    <style name="Button_">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black_dark_</item>
+    </style>
+
+    <style name="CheckBox_">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:checked">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="EditText_">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black_text_in_action_bar</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="FrameLayout_">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="GridView_">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="ImageButton__MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="ImageButton__WrapContent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="ImageView_Line">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.2</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="ImageView__MatchParent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="ImageView__WrapContent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="LinearLayout__Horizontal_MatchParent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LinearLayout__Horizontal_WrapContent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="LinearLayout__Vertical_MatchParent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayout__Vertical_WrapContent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ListView_">
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:listSelector">@color/orange_light</item>
+    </style>
+
+    <style name="RadioButton_">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="Spinner_">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextView__Content">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="TextView_Drawer">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">left|center</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextView__Title">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black_text_in_action_bar</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+</resources>

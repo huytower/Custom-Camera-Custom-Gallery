@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout__Vertical_MatchParent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1">
+
+        <ImageView
+            android:id="@+id/iv_review_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/black"
+            android:visibility="gone" />
+
+        <VideoView
+            android:id="@+id/vv_review_video"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@color/black"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        style="@style/FrameLayout_"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_weight="1.2"
+        android:alpha="0.7"
+        android:background="@color/black"
+
+        >
+
+        <LinearLayout
+            style="@style/LinearLayout__Horizontal_MatchParent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+
+            <Button
+                android:id="@+id/btn_retake"
+                style="@style/Button_"
+                android:layout_gravity="left"
+                android:background="@drawable/selector_transparent"
+                android:text="@string/retake"
+                android:textColor="@color/orange" />
+
+            <ImageView
+                style="@style/ImageView_Line"
+                android:layout_weight="1.2" />
+
+            <Button
+                android:id="@+id/btn_use"
+                style="@style/Button_"
+                android:background="@drawable/selector_transparent"
+                android:text="@string/use_photo"
+                android:textColor="@color/orange" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+//        applicationId "mirrortowers.custom_camera_gallery_library"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+// ext is a gradle closure allowing the declaration of global properties
+ext {
+    PUBLISH_GROUP_ID = 'android.mirrortowers'
+    PUBLISH_ARTIFACT_ID = 'custom_camera_gallery'
+    PUBLISH_VERSION = '1.0.3'
+}
+
+def groupId = project.PUBLISH_GROUP_ID
+def artifactId = project.PUBLISH_ARTIFACT_ID
+def version = project.PUBLISH_VERSION
+
+def localReleaseDest = "${buildDir}/release/${version}"
+
+//task androidJavadocs(type: Javadoc) {
+//    source = android.sourceSets.main.java.srcDirs
+//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+//}
+//
+//task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+//    classifier = 'javadoc'
+//    from androidJavadocs.destinationDir
+//}
+
+task androidSourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
+artifacts {
+    archives androidSourcesJar
+//    archives androidJavadocsJar
+}
+
+uploadArchives {
+    repositories.mavenDeployer {
+        pom.groupId = groupId
+        pom.artifactId = artifactId
+        pom.version = version
+        // Add other pom properties here if you want (developer details / licenses)
+        repository(url: "file://${localReleaseDest}")
+    }
+}
+
+task zipRelease(type: Zip) {
+    from localReleaseDest
+    destinationDir buildDir
+    archiveName "release-${version}.zip"
+}
+
+task generateRelease << {
+    println "Release ${version} can be found at ${localReleaseDest}/"
+    println "Release ${version} zipped can be found ${buildDir}/release-${version}.zip"
+}
+
+generateRelease.dependsOn(uploadArchives)
+generateRelease.dependsOn(zipRelease)
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.0'
+    compile 'com.android.support:support-v4:23.1.0'
+    compile 'com.google.android.gms:play-services-identity:8.1.0'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.1.10'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'
+    compile 'com.google.android.gms:play-services:8.1.0'
+}

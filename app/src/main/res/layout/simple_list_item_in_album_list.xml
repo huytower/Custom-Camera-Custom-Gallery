@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_in_simple_list_item_in_custom_gallery"
+    style="@style/LinearLayout__Horizontal_WrapContent"
+    android:layout_height="70dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp">
+
+    <custom_view.MarkableImageView
+        android:id="@+id/iv_folder_thumbnail_in_simple_list_item_in_custom_gallery"
+        style="@style/ImageView__MatchParent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        style="@style/LinearLayout__Vertical_MatchParent"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:id="@+id/tv_album_name_in_simple_list_item_in_custom_gallery"
+            style="@style/TextView__Title"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="left|center"
+            android:textStyle="bold" />
+
+        <LinearLayout style="@style/LinearLayout__Horizontal_MatchParent">
+
+            <ImageView
+                android:id="@+id/iv_photos_icon_in_simple_list_item_in_custom_gallery"
+                style="@style/ImageView__MatchParent"
+                android:layout_weight="1.2"
+                android:src="@drawable/iv_photos" />
+
+            <TextView
+                android:id="@+id/tv_number_of_photos_in_simple_list_item_in_custom_gallery"
+                style="@style/TextView__Content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center" />
+
+            <TextView
+                style="@style/TextView__Content"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:text="|" />
+
+            <ImageView
+                android:id="@+id/iv_videos_icon_in_simple_list_item_in_custom_gallery"
+                style="@style/ImageView__MatchParent"
+                android:layout_weight="1.2"
+                android:src="@drawable/iv_videos" />
+
+            <TextView
+                android:id="@+id/tv_number_of_videos_in_simple_list_item_in_custom_gallery"
+                style="@style/TextView__Content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="left|center" />
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/ImageView_Line"
+            android:layout_weight="1.95"
+            android:alpha="0.5"
+            android:src="@color/gray_dark_in_under_action_bar" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/iv_next_in_simple_list_item_in_custom_gallery"
+        style="@style/ImageButton__MatchParent"
+        android:layout_weight="1.1"
+        android:src="@drawable/ibtn_next" />
+
+</LinearLayout>

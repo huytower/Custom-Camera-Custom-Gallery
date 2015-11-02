@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LinearLayout__Vertical_MatchParent">
+
+    <LinearLayout
+        android:id="@+id/ll_album_name_in_activity_custom_gallery"
+        style="@style/LinearLayout__Horizontal_MatchParent"
+        android:layout_weight="1.2">
+
+        <ImageButton
+            android:id="@+id/ibtn_back_in_activity_custom_gallery"
+            style="@style/ImageButton__MatchParent"
+            android:layout_weight="1.2"
+            android:background="@drawable/selector_transparent"
+            android:src="@drawable/ibtn_back" />
+
+        <TextView
+            android:id="@+id/tv_album_name_in_activity_custom_gallery"
+            style="@style/TextView__Title"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:text="Album Name"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_upload_in_activity_custom_gallery"
+            style="@style/TextView__Title"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:background="@drawable/selector_transparent"
+            android:text="@string/upload"
+            android:textColor="@color/gray_dark_in_under_action_bar" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_in_activity_custom_gallery"
+        style="@style/FrameLayout_"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1" />
+
+</LinearLayout>

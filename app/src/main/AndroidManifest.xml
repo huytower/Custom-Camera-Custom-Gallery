@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mirrortowers.custom_camera_gallery_library">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name">
+
+        <!-- custom camera and gallery-->
+        <activity
+            android:name="ui.activity.custom.camera.CustomCamera"
+            android:screenOrientation="portrait"
+            />
+
+        <activity android:name="ui.activity.custom.gallery.CustomGallery" />
+
+    </application>
+
+</manifest>

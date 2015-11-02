@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="black_text_in_action_bar">#010101</color>
+    <color name="black_text_in_edit_text">#585858</color>
+    <color name="black_dark_">#434343</color>
+    <color name="black_line">#313131</color>
+    <color name="black_light_in_item_background">#EAEAEA</color>
+    <color name="black_light_in_page_background">#E9E9E9</color>
+    <color name="black_light_border_line">#9F9F9F</color>
+    <!--<color name = "black_light_group_name">#6A6A6A</color>-->
+    <color name="blue">#3f4660</color>
+    <color name="blue_light">#FF3A948A</color>
+    <color name="blue_dark">#FF1C9AAA</color>
+    <color name="brown">#FF3B2817</color>
+    <color name="brown_dark">#312316</color>
+    <color name="brown_light">#9a4f18</color>
+    <color name="green_light">#FF90CD02</color>
+    <color name="gray">#787878</color>
+    <color name="gray_dark_in_under_action_bar">#B4B4B4</color>
+    <color name="gray_dark_border_line">#D5D5D5</color>
+    <color name="gray_darker_item_background">#CDCDCD</color>
+    <color name="gray_light_in_action_bar">#F7F7F7</color>
+    <color name="gray_light_background_edit_text">#E1E1E1</color>
+    <color name="gray_light_background_fragment">#FFEBECEE</color>
+    <color name="gray_light_hint">#BDBDBD</color>
+    <color name="gray_light_item_uploading">#F9F9F9</color>
+    <color name="gray_light_line">#C8C8C8</color>
+    <color name="gray_light_modified_time">#A3A3A3</color>
+    <color name="gray_light_rectangle_border_line">#D5D5D5</color>
+    <color name="orange">#FF9602</color>
+    <color name="orange_light">#FFFFC502</color>
+    <color name="red_in_badget">#FF3B2F</color>
+    <color name="red_light">#FFFE6653</color>
+    <color name="red_light_in_btn_setting_fragment">#FFD66B69</color>
+    <color name="red_for_logout_text">#FF782B02</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow_light">#FFFFF9E3</color>
+    <color name="radio_button_selected_color">#ff33b5e5</color>
+    <color name="radio_button_unselected_color">@android:color/transparent</color>
+</resources>

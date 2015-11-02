@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/FrameLayout_"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <FrameLayout
+        android:id="@+id/fl_camera_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/fl_switch_camera_font_or_back"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="top"
+        android:alpha="0.7"
+        android:background="@color/black">
+
+        <LinearLayout
+            style="@style/LinearLayout__Horizontal_WrapContent"
+            android:layout_gravity="top"
+            android:layout_margin="10dp">
+
+            <ImageButton
+                android:id="@+id/ibtn_switch_back_or_front_camera"
+                style="@style/ImageButton__WrapContent"
+                android:layout_width="match_parent"
+                android:layout_weight="1.2"
+                android:background="@drawable/selector_transparent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ibtn_switch_front_or_back_camera" />
+
+            <ImageView
+                style="@style/ImageView_Line"
+                android:layout_weight="1.35" />
+
+            <LinearLayout
+                android:id="@+id/ll_elapse_time"
+                style="@style/LinearLayout__Horizontal_MatchParent"
+                android:layout_weight="1.2"
+                android:alpha="0.7"
+                android:background="@android:color/black"
+                android:visibility="invisible">
+
+                <ImageView
+                    style="@style/ImageView__MatchParent"
+                    android:src="@drawable/ibtn_record_video" />
+
+                <TextView
+                    android:id="@+id/tv_elapse_time"
+                    style="@style/TextView__Content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="00:00"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+            <ImageView
+                style="@style/ImageView_Line"
+                android:layout_weight="1.35" />
+
+            <ImageButton
+                android:id="@+id/ibtn_close"
+                style="@style/ImageButton__WrapContent"
+                android:layout_width="match_parent"
+                android:layout_weight="1.2"
+                android:background="@drawable/selector_transparent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ibtn_close" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_take_photo_or_record_video"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_gravity="bottom"
+        android:alpha="0.7"
+        android:background="@color/black">
+
+        <LinearLayout
+            style="@style/LinearLayout__Horizontal_WrapContent"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                style="@style/LinearLayout__Horizontal_MatchParent"
+                android:layout_weight="1.15">
+
+                <ImageView
+                    style="@style/ImageView_Line"
+                    android:layout_weight="5" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_switch_take_photo_or_record_video"
+                    style="@style/ImageButton__WrapContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.7"
+                    android:background="@drawable/selector_transparent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/ibtn_switch_record_video" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ibtn_take_photo_or_record_video"
+                style="@style/ImageButton__WrapContent"
+                android:layout_width="match_parent"
+                android:layout_weight="1.2"
+                android:background="@drawable/selector_transparent"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/ibtn_take_photo" />
+
+            <ImageView
+                style="@style/ImageView_Line"
+                android:layout_weight="1.6" />
+
+            <LinearLayout
+                style="@style/LinearLayout__Horizontal_MatchParent"
+                android:layout_width="match_parent"
+                android:layout_weight="1.3"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageButton
+                    android:id="@+id/ibtn_switch_to_crop_mode"
+                    style="@style/ImageButton__WrapContent"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/selector_transparent"
+                    android:src="@drawable/ibtn_square_rectangle_unselected" />
+
+                <ImageButton
+                    android:id="@+id/ibtn_switch_to_full_mode"
+                    style="@style/ImageButton__WrapContent"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/selector_transparent"
+                    android:src="@drawable/ibtn_rectangle_unselected" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>
