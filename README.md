@@ -30,7 +30,7 @@ Android 2.3.3 and above supported
 
 #Documentation
 Sync the library was put at jCenter (Bintray) so need put in build.gradle file in Project this line first 
-allprojects {
+> allprojects {
     repositories {
         jcenter()
         maven {
@@ -38,8 +38,10 @@ allprojects {
         }
     }
 }
+
 for Gradle can compile it
-dependencies {
+
+> dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.android.support:appcompat-v7:23.0.1'
     compile 'com.android.support:support-v4:23.0.1'
@@ -58,7 +60,8 @@ So now, you can access all class in the library to begin use Custom Camera featu
 #Usage
 Since almost developers want to get the file path of selected files so need following these steps :
 Firstly, initial activities with following extras : Custom Camera and Custom Gallery for user select file for us to get file path of them :
-@Override
+
+> @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_about:
@@ -86,7 +89,8 @@ Firstly, initial activities with following extras : Custom Camera and Custom Gal
     }
     
 Then, define Broadcast Receiver to get file path of selected files :
-public class BroadcastReceiverFileList extends BroadcastReceiver {
+
+> public class BroadcastReceiverFileList extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -106,7 +110,7 @@ public class BroadcastReceiverFileList extends BroadcastReceiver {
              * Multiple files
              */
 
-            ArrayList<String> mAlFilePath =
+            ArrayList<String mAlFilePath =
                     intent.getStringArrayListExtra(Receiver.EXTRAS_FILE_PATH);
 
             for (int i = 0; i < mAlFilePath.size(); i++) {
