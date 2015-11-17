@@ -37,10 +37,8 @@ Sync the library was put at jCenter (Bintray) so need put in build.gradle file i
         maven {        
             url  "http://dl.bintray.com/mirrortowers/maven"            
         }
-       
        }
-       
-     }
+      }
 
 for Gradle can compile it
 
@@ -127,6 +125,63 @@ Then, define Broadcast Receiver to get file path of selected files :
         }
     }
     }
+Manifest.xml file :
+
+	<?xml version="1.0" encoding="utf-8"?>
+    <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mirrortowers.beautiful_bag.android.custom_camera.custom_gallery">
+
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- Activity -->
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".DonateActivity"
+            android:theme="@style/AppDialogTheme" />
+
+        <!-- custom camera and gallery-->
+        <activity
+            android:name="ui.activity.custom.camera.CustomCamera"
+            android:screenOrientation="portrait" />
+
+        <activity android:name="ui.activity.custom.gallery.CustomGallery" />
+
+        <!--<activity android:name="com.paypal.android.MEP.PayPalActivity"/>-->
+
+        <!-- Receiver custom gallery and custom camera-->
+        <receiver android:name="receiver.BroadcastReceiverFileList">
+            <intent-filter>
+                <action android:name="ACTION_CHOSE_SINGLE_FILE" />
+                <action android:name="ACTION_CHOSE_MULTIPLE_FILE" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+    </manifest>
+  
 
 #Donation
 p/s : Every improve also need every support also, please support me if you can.
