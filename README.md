@@ -31,18 +31,13 @@ Android 2.3.3 and above supported
 #Documentation
 Sync the library was put at jCenter (Bintray) so need put in build.gradle file in Project this line first 
 
-> allprojects {
-    
-    repositories {
-    
-        jcenter()
-        
-        maven {
-        
-            url  "http://dl.bintray.com/mirrortowers/maven"
-            
+    allprojects {
+    repositories {    
+        jcenter()        
+        maven {        
+            url  "http://dl.bintray.com/mirrortowers/maven"            
         }
-        
+       
        }
        
      }
