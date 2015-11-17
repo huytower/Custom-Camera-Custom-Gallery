@@ -44,14 +44,10 @@ Sync the library was put at jCenter (Bintray) so need put in build.gradle file i
 
 for Gradle can compile it
 
-> dependencies {
-
+    dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    
     compile 'com.android.support:appcompat-v7:23.0.1'
-    
     compile 'com.android.support:support-v4:23.0.1'
-    
     compile 'android.mirrortowers:custom_camera_gallery:1.0.3'
     }
 
@@ -69,9 +65,9 @@ Since almost developers want to get the file path of selected files so need foll
 Firstly, initial activities with following extras : Custom Camera and Custom Gallery for user select file for us to get file path of them :
 
 
-> @Override
+    @Override
 
-    public void onClick(View v) {
+     public void onClick(View v) {
     
         switch (v.getId()) {
             case R.id.btn_about:
@@ -102,7 +98,7 @@ Then, define Broadcast Receiver to get file path of selected files :
 
 public class BroadcastReceiverFileList extends BroadcastReceiver {
 
-    > @Override
+    @Override
     
     public void onReceive(Context context, Intent intent) {
     
@@ -130,7 +126,7 @@ public class BroadcastReceiverFileList extends BroadcastReceiver {
             }
         }
     }
-}
+    }
 
 #Donation
 p/s : Every improve also need every support also, please support me if you can.
