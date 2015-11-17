@@ -96,7 +96,7 @@ Firstly, initial activities with following extras : Custom Camera and Custom Gal
     
 Then, define Broadcast Receiver to get file path of selected files :
 
-public class BroadcastReceiverFileList extends BroadcastReceiver {
+    public class BroadcastReceiverFileList extends BroadcastReceiver {
 
     @Override
     
