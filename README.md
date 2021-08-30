@@ -183,11 +183,3 @@ Manifest.xml file :
     </manifest>
   
 
-#Donation
-p/s : Every improve also need every support also, please support me if you can.
-Rate app, like it, subscribe it, or donate .v.v.
-
-Really thank you for your help.
-
-p/s : Can transfer to [Paypal Account](https://www.paypal.com "Huy Tower") : huytower1990@gmail.com
-
