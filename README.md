@@ -1,3 +1,6 @@
+NOTICE : This library was DEPRECATED.
+
+
 # Custom Camera Gallery Library
 Since almost developers need get the file path of seleected file to serve for something like downloading, uploading, showing ... Therefore, it is useful library for developer to attach the library into application to do it more easily via friendly UI.
 
